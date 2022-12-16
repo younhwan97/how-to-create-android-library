@@ -1,4 +1,4 @@
-package kr.co.younhwan.howtocreateandroidlibrary
+package kr.co.younhwan.image_preview
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
