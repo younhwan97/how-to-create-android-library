@@ -19,13 +19,7 @@ class MainActivity : ComponentActivity() {
             HowToCreateAndroidLibraryTheme {
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background) {
                     Box() {
-                        ImagePreview(
-                            image = painterResource(id = R.drawable.sample),
-                            description = "Hello",
-                            modifier = Modifier
-                                .size(150.dp)
-                                .align(Alignment.Center)
-                        )
+                        
                     }
                 }
             }
