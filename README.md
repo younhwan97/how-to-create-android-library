@@ -1,5 +1,3 @@
-# how-to-create-android-library
-
 ## 1. 라이브러리 제공을 위한 프로젝트 생성
 
 `Android Studio → New Project → Empty Compose Activity`
@@ -13,7 +11,10 @@ class MainActivity : ComponentActivity() {
         setContent {
             HowToCreateAndroidLibraryTheme {
                 // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background) {
+                Surface(
+                    modifier = Modifier.fillMaxSize(), 
+                    color = MaterialTheme.colors.background
+                ) {
                     Box() {
                         ImagePreview(
                             image = painterResource(id = R.drawable.sample),
