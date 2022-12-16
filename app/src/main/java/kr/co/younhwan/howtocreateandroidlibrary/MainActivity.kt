@@ -10,7 +10,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
+import com.plcoding.image_preview.ImagePreview
 import kr.co.younhwan.howtocreateandroidlibrary.ui.theme.HowToCreateAndroidLibraryTheme
+import kr.co.younhwan.image_preview.ImagePreview
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +21,7 @@ class MainActivity : ComponentActivity() {
             HowToCreateAndroidLibraryTheme {
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background) {
                     Box() {
-
+                        
                     }
                 }
             }
