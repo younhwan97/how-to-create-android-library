@@ -249,3 +249,4 @@ dependencies {
 그 결과 다음과 같이 라이브러를 잘 가져오는 것을 볼 수 있다!
 
 <img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-11.png?raw=true" width="750"/>
+
