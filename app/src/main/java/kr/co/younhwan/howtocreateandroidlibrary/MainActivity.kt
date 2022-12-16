@@ -19,7 +19,7 @@ class MainActivity : ComponentActivity() {
             HowToCreateAndroidLibraryTheme {
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background) {
                     Box() {
-                        
+
                     }
                 }
             }

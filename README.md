@@ -110,7 +110,7 @@ Android Library Template 선택 및 모듈 생성
 
 <br>
 
-## 3. 
+## 3. Compose 종속성 추가
 
 기존 앱 모듈에 있는 ImagePreview.kt 파일을 새롭게 생성한 모듈에 가져온다.
 
@@ -166,4 +166,52 @@ dependencies {
     implementation 'androidx.compose.material:material:1.1.1'
 }
 ```
+
+<br>
+
+## 4. 라이브러리 배포
+
+라이브러리를 jitpack.io에 배포하기 위해 Gradle 파일을 수정한다.
+
+### 4-1. plugin 추가 
+
+다음과 같이 maven-publish plugin을 추가한다.
+
+```Gradle
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
+}
+```
+
+<br>
+
+### 4-2. 
+
+Gradle 파일의 제일 하단에 다음과 같은 구성을 추가한다.
+
+```Gradle
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication){
+                from components.release
+
+                groupId = 'com.github.younhwan97' // Input your github name 
+                artifactId = 'image-preview-compose'
+                version = '1.0'
+            }
+        }
+    }
+}
+```
+
+<br>
+
+### 4-3. 
+
+다시 프로젝트 계층 구조를 `Project`로 전환하고, jitpack.yml 파일을 생성한다.
+
+<img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-7.png?raw=true" width="550"/>
 
