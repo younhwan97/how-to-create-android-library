@@ -92,6 +92,23 @@ fun ImagePreview(
 
 하지만 우리가 라이브러리를 빌드할 때 그 많은 모듈을 포함하고 싶지 않기 때문에 새로운 모듈을 생성한다.
 
-<img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-2.png?raw=true" width="550" height="300"/>
+<img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-2.png?raw=true" width="550" height="350"/>
 
-<img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-3.png?raw=true" width="550" height="300"/>
+Android Library Template 선택 및 모듈 생성
+
+<img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-3.png?raw=true" width="550" height="350"/>
+
+<br>
+
+### 2-3. 결과 확인
+
+다시 포로젝트 계층 구조를 Android로 변경한다.
+
+새로운 모듈과 해당 모듈의 Gradle이 새롭게 생성된 것을 확인한다.
+
+<img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-4.png?raw=true" width="550" height="350"/>
+
+
+<br>
+
+
