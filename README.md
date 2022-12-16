@@ -202,4 +202,5 @@ before_install:
 
 github에 push하여 지금까지의 내용을 저장하고, 배포한다.
 
-<img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-8.png?raw=true" width="550"/>
+<img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-8.png?raw=true" width="750"/>
+
