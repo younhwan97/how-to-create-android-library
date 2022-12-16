@@ -204,3 +204,15 @@ github에 push하여 지금까지의 내용을 저장하고, 배포한다.
 
 <img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-8.png?raw=true" width="750"/>
 
+<br>
+
+<img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-9.png?raw=true" width="750"/>
+
+* **Release title:** 배포 제목을 작성
+* **Choose a tag:** 배포 버전을 작성
+
+<br>
+
+위 과정을 마치면 [https://jitpack.io/](https://jitpack.io/)에서 깃허브 레파지토리 주소를 검색했을 때 배포된 라이브러리의 상태를 확인할 수 있다.
+
+<img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-10.png?raw=true" width="750"/>
