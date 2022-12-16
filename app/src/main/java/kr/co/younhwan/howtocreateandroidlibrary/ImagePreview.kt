@@ -1,33 +1,24 @@
-## 1. 라이브러리 제공을 위한 프로젝트 생성
+package kr.co.younhwan.howtocreateandroidlibrary
 
-`Android Studio → New Project → Empty Compose Activity`
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.shadow
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.painter.Painter
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.unit.dp
 
-간단한 이미지 미리보기 라이브러리를 위해 다음과 같이 코드를 작성한다.
-
-```Kotlin
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            HowToCreateAndroidLibraryTheme {
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background) {
-                    Box() {
-                        ImagePreview(
-                            image = painterResource(id = R.drawable.sample),
-                            description = "Hello",
-                            modifier = Modifier
-                                .size(150.dp)
-                                .align(Alignment.Center)
-                        )
-                    }
-                }
-            }
-        }
-    }
-}
-```
-
-```Kotlin
 @Composable
 fun ImagePreview(
     image: Painter,
@@ -71,10 +62,3 @@ fun ImagePreview(
         )
     }
 }
-```
-
-<br>
-
-## 2. 
-
-### 2-1. 
