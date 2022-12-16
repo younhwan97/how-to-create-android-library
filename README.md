@@ -216,3 +216,36 @@ github에 push하여 지금까지의 내용을 저장하고, 배포한다.
 위 과정을 마치면 [https://jitpack.io/](https://jitpack.io/)에서 깃허브 레파지토리 주소를 검색했을 때 배포된 라이브러리의 상태를 확인할 수 있다.
 
 <img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-10.png?raw=true" width="750"/>
+
+<br>
+
+## 5. 프로젝트에 적용
+
+프로젝트가 정상적으로 배포됐다면, 이제 안드로이드 스튜디오에 라이브러리를 추가하여 사용할 수 있다.
+
+먼저 settings.gradle 파일에 다음과 같은 코드를 추가한다.
+
+```gradle
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+그리고 라이브러리를 사용하고자하는 프로젝트의 gradle 파일에 라이브러리 dependency를 추가한다.
+
+```gradle
+dependencies {
+
+    ...
+    implementation 'com.github.younhwan97:how-to-create-android-library:1.0.4'
+}
+```
+
+<br>
+
+그 결과 다음과 같이 라이브러를 잘 가져오는 것을 볼 수 있다!
+
+<img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-11.png?raw=true" width="750"/>
