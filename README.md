@@ -116,4 +116,4 @@ Android Library Template 선택 및 모듈 생성
 
 그 결과 다음과 같이 종속성 문제가 발생하는 것을 볼 수 있다.
 
-<img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-5.png?raw=true" width="550"/>
+<img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-6.png?raw=true" width="550"/>
