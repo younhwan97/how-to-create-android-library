@@ -10,7 +10,10 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             HowToCreateAndroidLibraryTheme {
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background) {
+                Surface(
+                    modifier = Modifier.fillMaxSize(), 
+                    color = MaterialTheme.colors.background
+                ) {
                     Box() {
                         ImagePreview(
                             image = painterResource(id = R.drawable.sample),
@@ -79,14 +82,14 @@ fun ImagePreview(
 
 ### 2-1. 프로젝트 계층 구조 변경
 
-<img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-step-1.png?raw=true"/>
+<img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-step-1.png?raw=true" width="550"/>
 
 <br>
 
 ### 2-2. 모듈 생성
 
-기존 MainActivity가 포함된 모듈은 이미 많은 다른 모듈이 포함된 모듈이다. 
+기존 MainActivity가 포함된 모듈은 이미 많은 다른 모듈들이 포함되어 있다. 
 
 하지만 우리가 라이브러리를 빌드할 때 그 많은 모듈을 포함하고 싶지 않기 때문에 새로운 모듈을 생성한다.
 
-<img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-step-2.png?raw=true"/>
+<img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-step-2.png?raw=true" width="550"/>
