@@ -2,33 +2,7 @@
 
 `Android Studio` → `New Project` → `Empty Compose Activity`
 
-간단한 이미지 미리보기 라이브러리를 위해 다음과 같이 코드를 작성한다.
-
-```Kotlin
-class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            HowToCreateAndroidLibraryTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(), 
-                    color = MaterialTheme.colors.background
-                ) {
-                    Box() {
-                        ImagePreview(
-                            image = painterResource(id = R.drawable.sample),
-                            description = "Hello",
-                            modifier = Modifier
-                                .size(150.dp)
-                                .align(Alignment.Center)
-                        )
-                    }
-                }
-            }
-        }
-    }
-}
-```
+간단한 이미지 미리보기 라이브러리를 위해 다음과 같은 컴포저블을 생성한다.
 
 ```Kotlin
 @Composable
@@ -222,3 +196,10 @@ before_install:
   - ./scripts/prepareJitpackEnvironment.sh
 ```
 
+<br>
+
+### 4-3. 배포
+
+github에 push하여 지금까지의 내용을 저장하고, 배포한다.
+
+<img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-8.png?raw=true" width="550"/>
