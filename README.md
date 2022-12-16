@@ -82,7 +82,7 @@ fun ImagePreview(
 
 ### 2-1. 프로젝트 계층 구조 변경
 
-<img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-step-1.png?raw=true" width="550"/>
+<img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-1.png?raw=true" width="300" height="300"/>
 
 <br>
 
@@ -92,4 +92,5 @@ fun ImagePreview(
 
 하지만 우리가 라이브러리를 빌드할 때 그 많은 모듈을 포함하고 싶지 않기 때문에 새로운 모듈을 생성한다.
 
-<img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-step-2.png?raw=true" width="550"/>
+<img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-2.png?raw=true" width="550" height="300"/>
+
