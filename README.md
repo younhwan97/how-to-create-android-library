@@ -163,7 +163,7 @@ dependencies {
 
 ### 4-1. plugin 추가 
 
-다음과 같이 maven-publish plugin을 추가한다.
+다음과 같이 `maven-publish` plugin을 추가한다.
 
 ```Gradle
 plugins {
@@ -199,7 +199,7 @@ afterEvaluate {
 
 <img src="https://github.com/younhwan97/how-to-create-android-library/blob/main/images/how-to-android-library-7.png?raw=true" width="550"/>
 
-다음과 같은 내용을 작성한다.
+그리고 다음과 같은 내용을 작성한다.
 
 ```yml
 jdk:
@@ -239,11 +239,11 @@ github에 push하여 지금까지의 내용을 저장하고, 배포한다.
 
 ```gradle
 allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
 ```
 
 그리고 라이브러리를 사용하고자하는 프로젝트의 gradle 파일에 라이브러리 dependency를 추가한다.
